@@ -1,7 +1,8 @@
+//Aqui se define un router de Express para manejar las solicitudes de productos.
 const { Router } = require('express')
 const  express = require('express')
 const router = express.Router()
-
+//definen cuatro rutas para manejar las solicitudes HTTP GET y POST:
 const productocontrollers = require('../controllers/productoController')
 
 // Mostar todos los Productos (Get)

@@ -1,7 +1,8 @@
+// Aqui se establece la conexión con la base de datos MongoDB usando Mongoose. 
 const mongoose = require('mongoose')
 const url = 'mongodb://127.0.0.1:27017/RegistroProductos'
 
-mongoose.connect(url, {
+mongoose.connect(url, {// se llama al método connect() de Mongoose, que toma la URL y algunas opciones de configuración. 
 useNewUrlParser: true,
 useUnifiedTopology: true,
 //useFindAndModify: false,

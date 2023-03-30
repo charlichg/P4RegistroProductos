@@ -1,3 +1,6 @@
+
+                       
+
 const modalproducto = new bootstrap.Modal(document.getElementById('modalproducto'))
 
 const on = (element, event, selector, handler) => {
@@ -18,5 +21,3 @@ on(document,'click','.btnEditar', e =>{
     Categoria_editar.value = fila.children[4].innerHTML
     modalproducto.show()
 })
-                       
-
