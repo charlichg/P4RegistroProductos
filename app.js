@@ -16,11 +16,9 @@ app.use(productos)
 
 app.get('/',(req, res)=>{
     res.send('hola mundo')
-})
+});
 
-app.listen(process.env.POST || 3000,() => {//se inicia escuchando en el puerto 3000.
+app.listen(process.env.PORT || 3000, () => {
+    //se inicia escuchando en el puerto 3000.
     console.log('¡Server UP!  en http://localhost:3000')
-
-
-
-})
+});
