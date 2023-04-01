@@ -1,8 +1,9 @@
 // Aqui se establece la conexión con la base de datos MongoDB usando Mongoose. 
 const mongoose = require('mongoose')
-const url = 'mongodb://127.0.0.1:27017/RegistroProductos'
+const url = "mongodb+srv://charlichg:By6HwmutMogf6MLX@cluster0.am61anf.mongodb.net/RegistroProductos?retryWrites=true&w=majority"
+require('dotenv').config({path:'variables.env'})
 
-mongoose.connect(url, {// se llama al método connect() de Mongoose, que toma la URL y algunas opciones de configuración. 
+mongoose.connect(process.env.DB_URI, {// se llama al método connect() de Mongoose, que toma la URL y algunas opciones de configuración. 
 useNewUrlParser: true,
 useUnifiedTopology: true,
 //useFindAndModify: false,
